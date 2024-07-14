@@ -1,22 +1,4 @@
-// routes/api.js
-
 const router = require('express').Router();
-const fs = require('fs');
-const path = require('path');
-
-// Path to your db.json file
-const dbFilePath = path.join(__dirname, '../db/db.json');
-
-// Helper function to read and parse JSON file
-const readAndParseFile = () => {
-  const data = fs.readFileSync(dbFilePath, 'utf8');
-  return JSON.parse(data);
-};
-
-// Helper function to write to JSON file
-const writeToDBFile = (data) => {
-  fs.writeFileSync(dbFilePath, JSON.stringify(data, null, 2), 'utf8');
-};
 
 // GET /api/notes - Read all notes
 router.get('/notes', (req, res) => {
