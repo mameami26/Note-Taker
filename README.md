@@ -15,4 +15,3 @@ This is a simple note-taking application built with Node.js and Express.js.
 3. Install dependencies:
    ```bash
    npm install
-We was going
