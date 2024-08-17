@@ -1,4 +1,5 @@
 const router = require('express').Router();
+const { readAndParseFile, writeToDBFile } = require('../helpers/fsUtils');
 
 // GET /api/notes - Read all notes
 router.get('/notes', (req, res) => {
